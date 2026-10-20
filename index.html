@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Bastardo | Desarrollador Web Front-End</title>
+  <meta name="description" content="Portafolio de Pedro Bastardo, desarrollador web especializado en crear experiencias digitales modernas con HTML, CSS y JavaScript." />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pedro Bastardo | Desarrollador Web" />
+  <meta property="og:description" content="Portafolio profesional con proyectos de e-commerce y desarrollo web moderno." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="container nav-content">
+      <a href="#hero" class="logo">&lt;PB /&gt;</a>
+      
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li><a href="assets/cv.pdf" class="btn-cv" download>CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="container hero-content">
+      <p class="hero-greeting">Hola, soy</p>
+      <h1 class="hero-title">Pedro Bastardo</h1>
+      <h2 class="hero-subtitle" id="typing">Desarrollador Web Front-End</h2>
+      <p class="hero-description">
+        Especializado en crear interfaces modernas, responsivas y de alto rendimiento. 
+        Transformo diseños complejos en código limpio (HTML, CSS, JS) listo para producción.
+      </p>
+      
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          Explorar Proyectos <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-outline">Trabajemos juntos</a>
+      </div>
+      
+      <div class="hero-socials">
+        <!-- CORREO ACTUALIZADO AQUÍ -->
+        <a href="mailto:bastardopedro99@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE MÍ ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title"><span>01.</span> Sobre mí</h2>
+      
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Soy un desarrollador Front-End enfocado en construir experiencias web 
+            memorables. Mi formación en Informática y Ciberseguridad me da una ventaja 
+            única: no solo creo interfaces atractivas, sino que también me preocupo 
+            por escribir código seguro y accesible.
+          </p>
+          <p>
+            He llevado proyectos reales a producción, destacando <strong>NOIR Shop</strong> 
+            (un e-commerce completo con carrito funcional y filtros dinámicos) y 
+            <strong>BlogDeCafé</strong> (una arquitectura semántica optimizada para lectura). 
+            Disfruto resolver problemas de UI y optimizar el rendimiento.
+          </p>
+          
+          <p style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">
+            Mi stack de desarrollo:
+          </p>
+          <ul class="tech-list">
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript ES6+</li>
+            <li>Flexbox / CSS Grid</li>
+            <li>Diseño 100% Responsive</li>
+            <li>Git & GitHub</li>
+            <li>Deploy (Netlify/Vercel)</li>
+          </ul>
+        </div>
+        
+        <div class="about-image">
+          <img src="assets/images/avatar.jpg" alt="Pedro Bastardo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROYECTOS ============ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title"><span>02.</span> Proyectos Destacados</h2>
+      
+      <div class="projects-grid">
+        
+        <!-- Proyecto 1: NOIR Shop -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/noir.png" alt="NOIR Shop - E-commerce de moda premium" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <p class="project-tag">E-commerce · Destacado</p>
+            <h3>NOIR Shop — Tienda de Moda Premium</h3>
+            <p class="project-description">
+              Plataforma de comercio electrónico con diseño editorial oscuro. 
+              Implementé un carrito de compras funcional, filtrado dinámico por 
+              categorías y notificaciones en tiempo real para mejorar la experiencia 
+              de compra del usuario.
+            </p>
+            <ul class="project-tech">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Netlify</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://noirshop-store.netlify.app/" target="_blank" rel="noopener">
+                <i class="fas fa-external-link-alt"></i> Visitar Sitio
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 2: Blog de Café -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/blogcafe.jpg" alt="BlogDeCafé - Blog de contenido" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <p class="project-tag">Maquetación Web · Blog</p>
+            <h3>BlogDeCafé — Arquitectura Semántica</h3>
+            <p class="project-description">
+              Sitio web de contenido enfocado en accesibilidad y velocidad de carga. 
+              Construido con HTML semántico y un diseño 100% responsive. Optimizado 
+              para ofrecer una lectura cómoda en cualquier dispositivo.
+            </p>
+            <ul class="project-tech">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Responsive</li>
+              <li>Netlify</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://stirring-pegasus-93bc30.netlify.app/" target="_blank" rel="noopener">
+                <i class="fas fa-external-link-alt"></i> Visitar Sitio
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Placeholder: Próximo proyecto -->
+        <article class="project-card project-coming">
+          <div class="project-content">
+            <p class="project-tag">En desarrollo</p>
+            <h3>Próximo Proyecto</h3>
+            <p class="project-description">
+              Actualmente estoy construyendo nuevas aplicaciones web. 
+              ¡Vuelve pronto para ver mi evolución!
+            </p>
+            <div class="project-links">
+              <a href="#contact"><i class="fas fa-envelope"></i> Hablemos de tu proyecto</a>
+            </div>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HABILIDADES ============ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title"><span>03.</span> Habilidades</h2>
+      
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <h3>Frontend Core</h3>
+          <p>HTML5 semántico, CSS3 (Grid/Flexbox), JavaScript ES6+.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Diseño Web</h3>
+          <p>Responsive Design, Mobile-First, Animaciones CSS, UI Moderna.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-tools"></i>
+          <h3>Herramientas</h3>
+          <p>VS Code, Git, GitHub, Figma, Consola del navegador.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-server"></i>
+          <h3>Deploy & Hosting</h3>
+          <p>Netlify, Vercel, GitHub Pages, manejo de dominios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section" id="contact">
+    <div class="container contact-content">
+      <h2 class="section-title"><span>04.</span> Contacto</h2>
+      <p class="contact-text">
+        ¿Buscas un desarrollador para tu equipo o tienes un proyecto en mente?
+        <br><strong>Déjame tu mensaje y te responderé a la brevedad.</strong>
+      </p>
+      
+      <!-- AQUÍ ESTÁ LA CONEXIÓN A FORMSPREE -->
+      <form class="contact-form" 
+            id="contactForm"
+            action="https://formspree.io/f/xjygdjab" 
+            method="POST">
+        
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Tu nombre" required />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Tu email" required />
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+        </div>
+        
+        <!-- Campo trampa anti-spam -->
+        <input type="text" name="_gotcha" style="display:none" />
+        
+        <button type="submit" class="btn btn-primary">
+          Enviar mensaje <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Pedro Bastardo. Diseñado y desarrollado con ❤️</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
